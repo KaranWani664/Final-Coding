@@ -1,4 +1,0 @@
-SQL
-
-Database - Database is collection of data in a format that can be easily accessed (Digital)
-DBMS - A software application used to manage our DB is called DBMS

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- 1st -->
+        <input> 
+        <!-- Above input for all types -->
+        <br />
+        <br />
+        <!-- 2nd -->
+        <input type = "text">
+        <br />
+        <br />
+        <!-- 3rd -->
+        <input type = "number">
+        <br />
+        <br />
+        <!-- 4th -->
+        <label>Name - </label>
+        <input type = "text">
+        <br />
+        <br />
+        <!-- 5th -->
+        <label>Father Name - </label>
+        <input type = "text">
+        <br />
+        <br />
+        <!-- 5th -->
+        <label>Age - </label>
+        <input type = "number">
+        <br />
+        <br />
+        <!-- 6th -->
+        <label>Normal Password - </label>
+        <input>
+        <br />
+        <br />
+        <!-- 7th -->
+        <label>Safe Password - </label>
+        <input type = "password">
+        <br />
+        <br />
+        <!-- 8th -->
+        <input type = "submit">
+        <br />
+        <br />
+        <!-- In above cases only values are pushed but we want name & value to be pushed so that database can identify which value is associated with particular section question -->
+
+        <!-- Data pushed in database in Name=Value fashion -->
+        
+        <hr />
+        Optimized form below as per DB requirement
+        <br />
+        DB can use any name format
+        <br />
+        URL changed when form is submitted with name & value pair
+        <hr />
+        <br />
+        
+        <label>Name - </label>
+        <input type = "text" name = "userName">
+        <br />
+        <br />
+        <label>Father Name - </label>
+        <input type = "text" name = "fatherName">
+        <br />
+        <br />
+        <label>Age - </label>
+        <input type = "number" name = "userAge">
+        <br />
+        <br />
+        <label>Normal Password - </label>
+        <input type = "text" name = "normalPassword">
+        <br />
+        <br />
+        <label>Safe Password - </label>
+        <input type = "password" name = "safePassword">
+        <br />
+        <br />
+        <input type = "submit">
+        <hr />
+        <br />
+        Gender
+        <br />
+        <br />
+        <!-- All clickable -->
+        <label>Male</label>
+        <input type = "radio">
+        <label>Female</label>
+        <input type = "radio">
+        <label>Any</label>
+        <input type = "radio">
+        <br />
+        <br />
+        <!-- Only one clickable -->
+        <label>Male</label>
+        <input type = "radio" name="userGender">
+        <label>Female</label>
+        <input type = "radio" name="userGender">
+        <label>Any</label>
+        <input type = "radio" name="userGender">
+        <br />
+        <!-- for & id Attribute - they are linked to each other as for is used in label & id is used in input-->
+        <br />
+        <label for = "male">Male</label>
+        <input type = "radio" name="userGender" id="male">
+        <label for = "female">Female</label>
+        <input type = "radio" name="userGender" id="female">
+        <label for = "any">Any</label>
+        <input type = "radio" name="userGender" id="any">
+        <br />
+        <br />
+        <label for = "MyName">MyName</label>
+        <input type = "text" name = "myName" id="MyName">
+        <br />
+        <!-- but above radio buttons are not taking values to DB means taking as radio = on above. 
+         
+        For radio buttons we have to write value also in input like below )-->
+        <label for = "Male">Male</label>
+        <input type = "radio" name="userGender" id="Male" value="Male">
+        <br />
+
+        <hr /> 
+        <br />
+
+        <!-- CheckBox -->
+        <label for="java">Java</label>
+        <input type="checkbox" name="subject" id="java" value="Java">
+        
+        <label for="cpp">C++</label>
+        <input type="checkbox" name="subject" id="cpp" value="C++">
+        
+        <label for="python">Python</label>
+        <input type="checkbox" name="subject" id="python" value="Python">
+        
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" name="subject" id="javascript" value="JavaScript">
+        
+        <!-- id is always unique -->
+        <!-- value is what is passed to the server when form is submitted Eg. if a check box is there if we press a check box without value is written then it only on submitted but if we add a value which is with checkbox then it will pass that value to server/backend/DB  -->
+        <!-- it will look like subject=Java&subject=Python in backend  -->
+        <br />
+        <br />
+        <input type = "submit">
+        <br />
+        <br />
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br />   
+        <br />
+        <br />
+        
+    </form>
+
+</body>
+</html>

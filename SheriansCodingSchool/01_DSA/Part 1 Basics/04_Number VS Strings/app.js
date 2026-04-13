@@ -33,10 +33,16 @@ console.log("The Sum of 10 & 20 is " + e + f);
 //Operend => a
 
 //Sum with message
-let e = 10;
-let f = 20;
-console.log("The Sum of 10 & 20 is " + (e + f));
+let g = 10;
+let h = 20;
+console.log("The Sum of 10 & 20 is " + (g + h));
 //Uses BODMAS and keep String and Number Seperate for Calculation but Output is String
 //The Sum of 10 & 20 is 30
-console.log(typeof("The Sum of 10 & 20 is " + (e + f)));
+console.log(typeof("The Sum of 10 & 20 is " + (g + h)));
 
+let i = 12;
+let j = 13;
+console.log(i + j + " is sum of 12 & 13");
+//25 is sum of 12 & 13
+console.log(typeof(i + j + " is sum of 12 & 13"));
+//String because js is interpreted line by line so first it got number it solved them then it got string so everything turned into string

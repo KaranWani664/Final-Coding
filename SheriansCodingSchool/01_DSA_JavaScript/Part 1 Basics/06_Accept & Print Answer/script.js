@@ -28,16 +28,28 @@ let numberUserInput = Number(prompt("Write a number"));
 console.log(numberUserInput);
 console.log(typeof(numberUserInput));
 
+// if its non conververtible value like text then it will give NaN
+// NaN is also a number in typeof Function 
 // Better version seperate and use of Number(Variable_Name) function
 
 let height = prompt("Give height in cm");
 height = Number(height);
 console.log(height);
 console.log(typeof(height));
+// if text then it will give NaN -> Explained below
+
 
 // Number Function explanation
-// Number(12) -> Number 
-// Number("12") -> Number 
-// Number("Karan") -> NaN     
-// Number("Karan22") -> NaN
+console.log(Number(12));
+// Number(12) -> 12 as Number 
 
+console.log(Number("12"));
+// Number("12") -> 12 as Number 
+
+console.log(Number("Karan"));
+// Number("Karan") -> NaN    
+
+console.log(Number("Karan22"));
+// Number("Karan22") -> NaN    
+
+// String to Number and any Conversion except Type Coercion is under the concept of Type Casting or Type Conversion

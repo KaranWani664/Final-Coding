@@ -84,3 +84,37 @@ switch(true) {
         break; 
     default: console.log("Invalid");
 } //Invalid
+
+// 1st Option for resolution
+
+const decf = 0.1 + 0.2;
+
+switch (true) {
+    // Check if the difference is negligible
+    case Math.abs(decf - 0.3) < Number.EPSILON:
+        console.log("Hey1");
+        break;
+    case Math.abs(decf - 0.5) < Number.EPSILON:
+        console.log("Hey2");
+        break;
+    default:
+        console.log("Invalid");
+}
+
+//2nd Option for resolution
+
+// Round to 12 decimal places to clear the floating point error
+const decs = Number((0.1 + 0.2).toFixed(12));
+
+switch (decs) {
+    case 0.3:
+        console.log("Hey1");
+        break;
+    case 0.5:
+        console.log("Hey2");
+        break;
+    default:
+        console.log("Invalid");
+}
+
+// Number.EPSILON = 0.0000000000000002220446049250313 or 2.220446049250313e-16

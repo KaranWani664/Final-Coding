@@ -1,4 +1,4 @@
-// Sum of n Natural Numbers
+// Factorial of Number
 let pr = prompt("Give us your number");
 
 if (pr === null) {

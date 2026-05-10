@@ -9,21 +9,17 @@ console.log(n); //0 for null
 if (pr === null || isNaN(n) || !Number.isInteger(n) || n<=0) {
     console.log("Invalid Input / Cancelled / Give me Positive Integer Number");
 } else {
-    let Prime = true;
-    for (let i = 2; i<=Math.floor(n/2); i++){
-        if(n % i === 0) {
-            Prime = false;
-            break;
-        }
-    }
-    console.log(Prime);
+    console.log(isPrime(n));
 }
 
 function isPrime(n) {
     if (n<=1) return false;
     if (n==2) return true;
     if (n%2==0) return false;
-
+    for (let i = 3; i<=Math.floor(Math.sqrt(n)); i+=2){
+        if(n % i == 0) return false;
+    }
+    return true;
 }
 
 

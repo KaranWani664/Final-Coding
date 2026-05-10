@@ -11,7 +11,3 @@ if (pr === null || isNaN(n) || !Number.isInteger(n) || n<=0) {
 } else {
     
 }
-
-
-
-

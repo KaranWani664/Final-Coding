@@ -1,4 +1,8 @@
-// 
+// Sasta CalC
+// press 1 for addition
+// press 1 for substraction etc.
+// Wrong option invalid
+// Take 2 variable
 
 let pr = prompt("Give us your number to reverse");
 console.log(pr);

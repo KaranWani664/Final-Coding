@@ -1,4 +1,4 @@
-// Sasta CalC
+// Sasta CalC - Java Calc without switch case
 // press 1 for addition
 // press 1 for substraction etc.
 // Wrong option invalid

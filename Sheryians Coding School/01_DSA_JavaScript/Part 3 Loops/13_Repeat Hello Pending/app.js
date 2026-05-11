@@ -1,4 +1,4 @@
-// 
+// This is just like Exit 07WhileLoop but you have to do this with do while exit when user prompt 0 
 
 let pr = prompt("Give us your number to reverse");
 console.log(pr);

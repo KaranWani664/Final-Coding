@@ -1,13 +1,13 @@
-// 
+// Do While Loop - This will run the loop atleast once without checking the condition if true run again if false then only run once 
 
-let pr = prompt("Give us your number to reverse");
-console.log(pr);
-let n = Number(pr);
-console.log("Input is : " + n);
-console.log(n); //0 for null
+let i = 1;
+do{
+    console.log("Hello")
+} while(12>13);
 
-if (pr === null || isNaN(n) || !Number.isInteger(n) || n<=0) {
-    console.log("Invalid Input / Cancelled / Give me Positive Integer Number");
-} else {
-    
-}
+
+let f = 1;
+do{
+    console.log("Hello")
+    f++;
+} while(f<=10);

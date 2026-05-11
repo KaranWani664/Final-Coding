@@ -1,6 +1,6 @@
-// Strong Number 
+// 
 
-let pr = prompt("Give us your number to Give Strong Number");
+let pr = prompt("Give us your number to reverse");
 console.log(pr);
 let n = Number(pr);
 console.log("Input is : " + n);

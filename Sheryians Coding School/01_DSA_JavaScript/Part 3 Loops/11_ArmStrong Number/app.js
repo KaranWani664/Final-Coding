@@ -16,7 +16,9 @@ if (pr === null || isNaN(n) || !Number.isInteger(n) || n<=0) {
     let Total = 0;
     let CubeTotal = 1;
     let Sum = n;
-    let i = n.length;
+    // let i = n.length; numbers don't have lenght
+    let i = pr.length;
+
     let Arrayrem = [];
     let ArrayTotal = [];
 
@@ -36,6 +38,7 @@ if (pr === null || isNaN(n) || !Number.isInteger(n) || n<=0) {
         n = Math.floor(n/10);
         Arrayrem.push(rem);
         ArrayTotal.push(Total);
+        i = pr.length;
     }
     // ArrayTotal.reverse();
     Arrayrem.push(...ArrayTotal);

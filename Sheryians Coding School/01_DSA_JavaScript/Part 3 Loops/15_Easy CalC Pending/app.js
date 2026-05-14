@@ -1,8 +1,8 @@
-// Sasta CalC - Java Calc without switch case
+// CalC - without switch case
 // press 1 for addition
-// press 1 for substraction etc.
+// press 2 for substraction etc.
 // Wrong option invalid
-// Take 2 variable
+// Take 2 variable as Input using prompt
 
 let running = true;
 

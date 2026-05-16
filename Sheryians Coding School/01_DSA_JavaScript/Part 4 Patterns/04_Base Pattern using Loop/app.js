@@ -1,12 +1,16 @@
-// Different Creation Different Line Output on browser
-console.log("Hello");
-console.log("World");
-// Hello
-// World
+// Base Pattern using loop & User Input
 
-// Different Creation Same Line Output on Terminal (Function from Node is used)
-process.stdout.write("Hello ");
-process.stdout.write("World");
-// Hello World
+// * 
+// * 
+// * 
+// * 
+// * 
 
+let prompt = require('prompt-sync')();
+let n = prompt("Tell me how much time you want to print that number ");
+process.stdout.write(n);
+console.log(" ");
 
+for (let i = 0; i<=n; i++) {
+    process.stdout.write("* ");
+}

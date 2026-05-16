@@ -1,5 +1,5 @@
 // for 
-    // for (start; end; change){        
+    // for (start; condition or end; change){        
     // }
     
     // 1 to 22

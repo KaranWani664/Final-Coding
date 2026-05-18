@@ -1,31 +1,30 @@
 // X Pattern
-// *
-// 
-//
-//
-//
-//
+
+// *       *
+//   *   *
+//     *
+//   *   *
+// *       *
+
+// row count = i, col count = j 
+// for top left to bottom right line
+// i=1,j=1 .... i=5,j=5
+// i == j give star 
+
+// for top right to bottom left line
+// i=1,j=5  i=2,j=4  ... i=5,j=1
+// i+j == n+1 give star
 
 let prompt = require('prompt-sync')();
 let n = Number(prompt("Tell me how much rows you want to print with that number "))
 
-//         *
-//       * *
-//     * * *
-//   * * * *
-// * * * * *
-
-// Inverted Right Angle Triangle as Space and Right Angle Triangle After Space
-
 for (let i = 1; i<=n; i++) {
-    // Inverted
-    for (let j = n-1; j>=i; j--){
-        process.stdout.write(" ");
-    }    
-    
-    // Right
-    for (let k = 1; k<=i; k++) {
+    for (let j = 1; j<=n; j++) {
+        if(i==j || i+j==n+1){
             process.stdout.write("* ");
+        } else {
+            process.stdout.write("  ");
+        }
     }
     console.log(" ");
 }
